@@ -32,7 +32,7 @@ Main Folder
                          └── ...  
 
 # Fix Page numbering
-If the filenames start out with 1.jpg, 2.jpg, ... but the amout of pages is that of 2+ digits. It will not order well for reading.
+If the filenames start out with 1.jpg, 2.jpg, ... but the amount of pages is that of 2+ digits. It will not order well for reading.
 The script looks at how many pages there are and if the pagenumbers are correct based on that.
 
 It's very simple and I have only anticipated the problems I encountered so far. What it can fix:
