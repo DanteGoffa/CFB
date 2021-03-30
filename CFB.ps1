@@ -174,6 +174,9 @@ foreach($sub in $directories) {
 	Remove-Item -LiteralPath $sub -Force -Recurse
 }
 
+#Instantly convert the archives to CBZ
+Get-ChildItem *.zip -Recurse | Rename-Item -NewName { $_.Name -replace '\.zip','.cbz' }
+
 #Waiting for user input so the console can be read after the script has ran.
 Write-Host -NoNewLine 'Press any key to continue...';
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
